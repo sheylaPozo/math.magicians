@@ -12,13 +12,11 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "module.exports": {
   "extends": ["airbnb", "plugin:react/recommended", "google"],
   "quotes": [2, "single"],
   "plugins": ["react"],
   "globals": {
     "SwaggerEditor": false
-    }
   },
   "rules": {
     "linebreak-style": ["error", "windows"],
