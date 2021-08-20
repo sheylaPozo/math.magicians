@@ -12,7 +12,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb", "plugin:react/recommended", "google"],
+  "extends": ["airbnb", "plugin:react/recommended"],
   "plugins": ["react"],
   "globals": {
     "SwaggerEditor": false
