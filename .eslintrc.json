@@ -13,7 +13,6 @@
     "sourceType": "module"
   },
   "extends": ["airbnb", "plugin:react/recommended", "google"],
-  "quotes": [2, "single"],
   "plugins": ["react"],
   "globals": {
     "SwaggerEditor": false
