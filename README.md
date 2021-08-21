@@ -19,8 +19,7 @@ React project, this project is been made with HTML5, CSS3, JS and Webpack, follo
 ----------------------
 |   Desktop version   |
 |-------------------- | 
-![Desktop](https://user-images.githubusercontent.com/54015740/130177049-e6d183dc-5f41-4a8c-8750-dafefa07d4b3.jpg)
-
+![Desktop](https://user-images.githubusercontent.com/54015740/130325536-501e0c09-9012-4c42-abd1-411249d3f2c2.jpg)
 ---
 
 ## 🤍 Built With:
