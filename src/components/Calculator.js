@@ -1,80 +1,60 @@
 import React from 'react';
 import './Calculator.css';
+import calculate from '../logic/calculator';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      result: 0,
+      total: null,
+      next: null,
     };
+    this.handler = this.handler.bind(this);
+  }
+
+  handler(e) {
+    this.setState((state) => calculate(state, e.target.innerText));
   }
 
   render() {
-    const { result } = this.state;
+    const { next, total } = this.state;
     return (
-      <div className="calculator">
-        <p className="calculator-result">{result}</p>
-        <div className="calculator-buttons">
-          <button type="button" className="grey">
-            AC
-          </button>
-          <button type="button" className="grey">
-            +/-
-          </button>
-          <button type="button" className="grey">
-            %
-          </button>
-          <button type="button" className="pink">
-            /
-          </button>
-          <button type="button" className="grey">
-            7
-          </button>
-          <button type="button" className="grey">
-            8
-          </button>
-          <button type="button" className="grey">
-            9
-          </button>
-          <button type="button" className="pink">
-            x
-          </button>
-          <button type="button" className="grey">
-            4
-          </button>
-          <button type="button" className="grey">
-            5
-          </button>
-          <button type="button" className="grey">
-            6
-          </button>
-          <button type="button" className="pink">
-            -
-          </button>
-          <button type="button" className="grey">
-            1
-          </button>
-          <button type="button" className="grey">
-            2
-          </button>
-          <button type="button" className="grey">
-            3
-          </button>
-          <button type="button" className="pink">
-            +
-          </button>
-          <button type="button" className="grey, zero">
-            0
-          </button>
-          <button type="button" className="grey">
-            .
-          </button>
-          <button type="button" className="pink">
-            =
-          </button>
-        </div>
-      </div>
+      <table className="container">
+        <tbody>
+          <tr>
+            <td className="table Input" colSpan="4">{next || (total || '0')}</td>
+          </tr>
+          <tr>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>AC</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>+/-</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>%</button></td>
+            <td className="table pink"><button className="btn" type="button" onClick={this.handler}>÷</button></td>
+          </tr>
+          <tr>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>7</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>8</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>9</button></td>
+            <td className="table pink"><button className="btn" type="button" onClick={this.handler}>x</button></td>
+          </tr>
+          <tr>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>4</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>5</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>6</button></td>
+            <td className="table pink"><button className="btn" type="button" onClick={this.handler}>-</button></td>
+          </tr>
+          <tr>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>1</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>2</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>3</button></td>
+            <td className="table pink"><button className="btn" type="button" onClick={this.handler}>+</button></td>
+          </tr>
+          <tr>
+            <td className="table" colSpan="2"><button className="btn" type="button" onClick={this.handler}>0</button></td>
+            <td className="table"><button className="btn" type="button" onClick={this.handler}>.</button></td>
+            <td className="table pink"><button className="btn" type="button" onClick={this.handler}>=</button></td>
+          </tr>
+        </tbody>
+      </table>
     );
   }
 }

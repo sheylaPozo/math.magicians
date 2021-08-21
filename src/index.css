@@ -43,8 +43,8 @@ button:nth-child(17) {
 }
 
 button:nth-child(4n),
-button:last-child {
-  background-color: #c300ff;
+button:last-child:hover {
+  background-color: #b56fca;
 }
 
 .App {
