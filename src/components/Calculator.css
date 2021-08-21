@@ -38,3 +38,16 @@
   opacity: 0.6;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 924px) {
+  .container {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    height: 100px;
+    width: 300px;
+    top: auto;
+    left: auto;
+    overflow: hidden;
+  }
+}
