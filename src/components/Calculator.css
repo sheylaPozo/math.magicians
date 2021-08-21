@@ -2,8 +2,10 @@
   border: 2px solid black;
   width: 500px;
   height: 500px;
-  margin: 40px;
+  margin: auto;
+  margin-top: 1%;
   border-collapse: collapse;
+  box-shadow: #e00fa1 0 20px 30px -10px;
 }
 
 .table {
@@ -33,4 +35,11 @@
   font-size: 18px;
   font-weight: 600;
   padding: 10px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
