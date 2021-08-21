@@ -75,7 +75,7 @@ export default function calculate(obj, buttonName) {
     return {};
   }
   if (obj.operation) {
-  return {
+    return {
       total: operate(obj.total, obj.next, obj.operation),
       next: null,
       operation: buttonName,
