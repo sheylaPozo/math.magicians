@@ -16,10 +16,11 @@ React project, this project is been made with HTML5, CSS3, JS and Webpack, follo
 > Math magicians; is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations. and read a random math-related quote.
 
 🤍 Preview Image🤍
-----------------------
-|   Desktop version   |
-|-------------------- | 
-![Desktop](https://user-images.githubusercontent.com/54015740/130333178-67f515fd-3680-4e64-9efc-8da34b65f94b.jpg)
+---------------------------------------------
+|   Desktop version   |   Mobile version    |
+|-------------------- | --------------------|
+![Desktop](https://user-images.githubusercontent.com/54015740/130333178-67f515fd-3680-4e64-9efc-8da34b65f94b.jpg) | ![mobile](https://user-images.githubusercontent.com/54015740/130336298-6c905696-ad19-4188-8925-71bba3bc3d43.png)
+------------------------------------------
 ---
 
 ## 🤍 Built With:
