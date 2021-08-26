@@ -1,0 +1,26 @@
+.home-holder {
+  padding: 0 5rem;
+  margin-top: 3rem;
+}
+
+.home-title {
+  font-size: 26px;
+  color: rgb(255, 80, 217);
+}
+
+.home-title:hover {
+  font-size: 30px;
+  color: rgb(102, 189, 22);
+}
+
+.home-text {
+  margin-left: 3rem;
+  margin-top: 5rem;
+  font-size: 20px;
+}
+
+.home-second-text {
+  margin-left: 3rem;
+  margin-top: 2rem;
+  font-size: 20px;
+}

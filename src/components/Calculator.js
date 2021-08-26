@@ -3,49 +3,83 @@ import './Calculator.css';
 import calculate from '../logic/calculator';
 
 const Calculator = () => {
-  const [state, myState] = useState({ total: null, next: null, operation: null });
+  const [state, setState] = useState({});
 
-  const changeState = (e) => {
-    myState({ ...state, ...calculate(state, e.target.innerText) });
+  const handleClick = (e) => {
+    setState({ ...state, ...calculate(state, e.target.name) });
   };
 
+  const { total, next, operation } = state;
+  const display = (total || '') + (operation || '') + (next || '');
+
   return (
-    <table className="container">
-      <tbody>
-        <tr>
-          <td className="table Input" colSpan="4">{state.next || (state.total || '0')}</td>
-        </tr>
-        <tr>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>AC</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>+/-</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>%</button></td>
-          <td className="table pink"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>÷</button></td>
-        </tr>
-        <tr>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>7</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>8</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>9</button></td>
-          <td className="table pink"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>x</button></td>
-        </tr>
-        <tr>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>4</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>5</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>6</button></td>
-          <td className="table pink"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>-</button></td>
-        </tr>
-        <tr>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>1</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>2</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>3</button></td>
-          <td className="table pink"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>+</button></td>
-        </tr>
-        <tr>
-          <td className="table" colSpan="2"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>0</button></td>
-          <td className="table"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>.</button></td>
-          <td className="table pink"><button className="btn" type="button" onClick={(e) => { changeState(e); }}>=</button></td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="calculator">
+      <p className="calculator-result">{display || '0'}</p>
+      <div className="calculator-buttons">
+        <button name="AC" type="button" onClick={handleClick} className="grey">
+          AC
+        </button>
+        <button name="+/-" type="button" onClick={handleClick} className="grey">
+          +/-
+        </button>
+        <button name="" type="button" onClick={handleClick} className="grey">
+          %
+        </button>
+        <button name="÷" type="button" onClick={handleClick} className="pink">
+          ÷
+        </button>
+        <button name="7" type="button" onClick={handleClick} className="grey">
+          7
+        </button>
+        <button name="8" type="button" onClick={handleClick} className="grey">
+          8
+        </button>
+        <button name="9" type="button" onClick={handleClick} className="grey">
+          9
+        </button>
+        <button name="x" type="button" onClick={handleClick} className="pink">
+          x
+        </button>
+        <button name="4" type="button" onClick={handleClick} className="grey">
+          4
+        </button>
+        <button name="5" type="button" onClick={handleClick} className="grey">
+          5
+        </button>
+        <button name="6" type="button" onClick={handleClick} className="grey">
+          6
+        </button>
+        <button name="-" type="button" onClick={handleClick} className="pink">
+          -
+        </button>
+        <button name="1" type="button" onClick={handleClick} className="grey">
+          1
+        </button>
+        <button name="2" type="button" onClick={handleClick} className="grey">
+          2
+        </button>
+        <button name="3" type="button" onClick={handleClick} className="grey">
+          3
+        </button>
+        <button name="+" type="button" onClick={handleClick} className="pink">
+          +
+        </button>
+        <button
+          name="0"
+          type="button"
+          onClick={handleClick}
+          className="grey, zero"
+        >
+          0
+        </button>
+        <button name="." type="button" onClick={handleClick} className="grey">
+          .
+        </button>
+        <button name="=" type="button" onClick={handleClick} className="pink">
+          =
+        </button>
+      </div>
+    </div>
   );
 };
 
