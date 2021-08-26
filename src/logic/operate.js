@@ -13,10 +13,11 @@ export default function operate(numberOne, numberTwo, operation) {
     return one.times(two).toString();
   }
   if (operation === '÷') {
-    if (numberTwo === '0') {
-      return 'Can\'t devide by 0';
+    try {
+      return one.div(two).toString();
+    } catch {
+      return 'Error!';
     }
-    return one.div(two).toString();
   }
   if (operation === '%') {
     return one.mod(two).toString();

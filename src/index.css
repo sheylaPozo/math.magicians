@@ -2,6 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(80, 54, 228);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: rgb(140, 0, 255);
+  text-decoration: none;
 }
 
 button {
