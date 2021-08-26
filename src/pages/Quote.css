@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 40px;
   padding: 10%;
-  background-image: url(../imgs/quote.png);
+  background-image: url(../img/quote.png);
   background-repeat: no-repeat;
   background-size: 160px;
 }
