@@ -1,5 +1,3 @@
-![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
-
 ![app](https://img.shields.io/badge/Myapp-blue)
 
 # math.magicians
