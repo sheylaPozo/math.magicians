@@ -22,7 +22,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.10.0"
   },
   "eslintConfig": {
     "extends": [
