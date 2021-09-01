@@ -12,7 +12,7 @@ const Calculator = () => {
   const { total, next, operation } = state;
   const display = (total || '') + (operation || '') + (next || '');
 
-    return (
+  return (
     <div className="calculator">
       <p className="calculator-result">{display || '0'}</p>
       <div className="calculator-buttons">
