@@ -1,10 +1,10 @@
 .calculator-result {
-  box-shadow: #e00fa1 0 20px 30px -10px;
   background-color: grey;
   text-align: end;
   padding: 1rem 0.2rem;
   color: #fff;
   font-size: 22px;
+  box-shadow: #e00fa1 0 20px 30px -10px;
 }
 
 .calculator-buttons {
