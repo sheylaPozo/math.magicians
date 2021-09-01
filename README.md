@@ -17,7 +17,8 @@ React project, this project is been made with HTML5, CSS3, JS and Webpack, follo
 ---------------------------------------------
 |   Desktop version   |   Mobile version    |
 |-------------------- | --------------------|
-![Desktop](https://user-images.githubusercontent.com/54015740/130333178-67f515fd-3680-4e64-9efc-8da34b65f94b.jpg) | ![mobile](https://user-images.githubusercontent.com/54015740/130336298-6c905696-ad19-4188-8925-71bba3bc3d43.png)
+![Desktop](https://user-images.githubusercontent.com/54015740/130333178-67f515fd-3680-4e64-9efc-8da34b65f94b.jpg) ![page](https://user-images.githubusercontent.com/54015740/131643419-6c893123-f254-46de-bcda-ecfc55f95011.jpg) ![page2](https://user-images.githubusercontent.com/54015740/131645020-be9caac5-a484-4e15-a407-164f26c4790d.jpg)
+![page3](https://user-images.githubusercontent.com/54015740/131645025-671f9a4d-43c6-42a5-9f4b-efefbd2cd438.jpg)| ![mobile](https://user-images.githubusercontent.com/54015740/130336298-6c905696-ad19-4188-8925-71bba3bc3d43.png)
 ------------------------------------------
 ---
 
