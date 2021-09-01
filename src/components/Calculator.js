@@ -13,7 +13,7 @@ const Calculator = () => {
   const display = (total || '') + (operation || '') + (next || '');
 
   return (
-        <div className="calculator">
+    <div className="calculator">
       <p className="calculator-result">{display || '0'}</p>
       <div className="calculator-buttons">
         <button name="AC" type="button" onClick={handleClick} className="grey">
