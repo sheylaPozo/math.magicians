@@ -1,4 +1,5 @@
-![Microverse](https://img.shields.io/badge/Microverse2.0-blueviolet) ![app](https://img.shields.io/badge/Myapp-blue)
+![Microverse](https://img.shields.io/badge/Microverse2.0-blueviolet) 
+![app](https://img.shields.io/badge/Myapp-blue)
 
 # math.magicians
 React project, this project is been made with HTML5, CSS3, JS and Webpack, following the guidelines of 
