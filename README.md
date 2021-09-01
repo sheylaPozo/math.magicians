@@ -38,6 +38,8 @@ The main purpose of the project [Math magicians](https://sheylapozo.github.io/ma
 ---
 
 🤍 [Demo](https://sheylapozo.github.io/math.magicians/) 
+🤍 [Netlify](https://mathsmagician.netlify.app/)
+🤍 [Heroku](https://mathmagicianss.herokuapp.com/)
 
 ---
 
